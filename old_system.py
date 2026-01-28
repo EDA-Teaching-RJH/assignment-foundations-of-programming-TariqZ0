@@ -45,9 +45,9 @@ def run_system_monolith():
            
             idx = n.index(rem)
             n.pop(idx)
-            r.pop(idx)
-            d.pop(idx)
-            print("Removed.") dine 
+            
+            
+            print("Removed.")
             
         elif opt == "4":
             print("Analyzing...")
