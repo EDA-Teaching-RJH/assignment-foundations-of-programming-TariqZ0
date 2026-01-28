@@ -29,7 +29,7 @@ def run_system_monolith():
             print("Current Crew List:")
             
             for i in range(len(n)):
-                print(n[i] + " - " + r[i])
+                print(n[i] + " - " + r[i]) x 
                 
         elif opt == "2":
             new_name = input("Name: ")
@@ -46,7 +46,7 @@ def run_system_monolith():
             idx = n.index(rem)
             n.pop(idx)
             
-            
+
             print("Removed.")
             
         elif opt == "4":
