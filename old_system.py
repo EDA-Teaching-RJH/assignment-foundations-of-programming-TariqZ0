@@ -68,7 +68,7 @@ def run_system_monolith():
             print("Invalid.")
             
         
-        x = 10
+        x = len(n)
         if x > 5:
             print("System Check OK")
         else:
