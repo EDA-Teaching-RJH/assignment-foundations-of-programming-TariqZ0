@@ -86,3 +86,18 @@ def update_rank(names, ranks, ids):
     ranks[idx] = new_rank
     
     print(f"{names[idx]}: {old_rank} -> {new_rank}")
+
+
+def display_roster(names, ranks, divs, ids):
+    if len(names) == 0:
+        print("No crew members in database.")
+        return
+    
+    print("\n" + "="*70)
+    print(f"{'ID':<8} {'Name':<20} {'Rank':<18} {'Division':<15}")
+    print("="*70)
+    
+    for i in range(len(names)):
+        print(f"{ids[i]:<8} {names[i]:<20} {ranks[i]:<18} {divs[i]:<15}")
+    
+    print("="*70)
