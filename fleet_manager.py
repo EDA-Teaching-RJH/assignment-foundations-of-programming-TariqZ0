@@ -129,3 +129,22 @@ def filter_by_division(names, divs):
     
     if not found:
         print(f"No crew members found in {division} division.")
+
+
+def calculate_payroll(ranks):
+    rank_credits = {
+        "Ensign": 200,
+        "Lieutenant": 400,
+        "Lt. Commander": 600,
+        "Commander": 800,
+        "Captain": 1000
+    }
+    
+    total_cost = 0
+    
+    for rank in ranks:
+        if rank in rank_credits:
+            total_cost += rank_credits[rank]
+    
+    print(f"\nTotal Payroll Cost: {total_cost} credits")
+    return total_cost
